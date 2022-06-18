@@ -37,6 +37,9 @@ function askQuestion() {
 
   const question = '<div>' + inputQuestion.value + '</div>'
 
+  // limpar campo apos o clique no botão
+  inputQuestion.value = ''
+
   // gerar número aleatório
   const totalResponses = responses.length
   const numberRandom = Math.floor(Math.random() * totalResponses)
